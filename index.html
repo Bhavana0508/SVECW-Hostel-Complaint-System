@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Select Your Role</title>
+    <style>
+
+      html{
+        background-image: url("hm.jpeg");
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: 50%;
+         
+         
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .button {
+        background-color:violet;
+        border: none;
+        color: white;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration:none ;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="center">
+      <div>
+        <h1>Select Your Role</h1>
+        <button class="button" onclick="redirectTo('wlogin.html')">Warden</button>
+	<button class="button" onclick="redirectTo('slogin.html')">Student</button>
+      </div>
+
+    </div>
+    <script>
+  	function redirectTo(url) {
+    		window.location.assign(url);
+  	}
+    </script>
+  </body>
+</html>
